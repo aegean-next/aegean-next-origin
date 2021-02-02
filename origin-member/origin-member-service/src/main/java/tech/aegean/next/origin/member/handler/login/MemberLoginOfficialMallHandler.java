@@ -37,7 +37,7 @@ public class MemberLoginOfficialMallHandler extends MemberLoginAbstarctHandler{
     @Override
     public MemberLoginResponse doLogin(HttpServletRequest request, MemberLoginRequest memberLogin) {
         // TODO【业务缓冲】基于缓存检查用户信息
-        memberMapper
+//        memberMapper
         return null;
     }
 }

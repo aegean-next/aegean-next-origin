@@ -31,7 +31,8 @@ public class MemberLoginInvokeHandler {
 
     MemberLoginHandler invoke(@NotNull MemberLoginRequest memberLogin){
         if(MemberLoginSourceEnum.MEMBER_LOGIN_SOURCE_OFFICIAL_MALL.getSource().equals(memberLogin.getSource())){
-            memberLoginOfficialMallHandler
+//            memberLoginOfficialMallHandler
         }
+        return null;
     }
 }

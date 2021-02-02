@@ -10,8 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>origin-member-service</artifactId>
     <name>origin-member-service</name>
-    <packaging>pom</packaging>
-
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
