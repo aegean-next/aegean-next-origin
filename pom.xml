@@ -56,6 +56,11 @@
             <id>sonatype</id>
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
         </repository>
+        <repository>
+            <id>github</id>
+            <name>GitHub OWNER Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/OWNER/REPOSITORY</url>
+        </repository>
     </distributionManagement>
 
     <!-- 开发者列表，个人的话就写自己，团队就罗列所有成员 -->
