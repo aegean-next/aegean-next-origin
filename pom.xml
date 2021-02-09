@@ -64,10 +64,6 @@
         <profile>
             <id>github</id>
             <distributionManagement>
-                <snapshotRepository>
-                    <id>github</id>
-                    <url>https://maven.pkg.github.com/aegean-tech/aegean-tech-origin/snapshots</url>
-                </snapshotRepository>
                 <repository>
                     <id>github</id>
                     <url>https://maven.pkg.github.com/aegean-tech/aegean-tech-origin</url>
