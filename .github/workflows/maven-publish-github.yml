@@ -25,7 +25,7 @@ jobs:
       uses: whelk-io/maven-settings-xml-action@v14
       with:
         repositories: '[{ "id": "github", "url": "https://maven.pkg.github.com/aegean-next/aegean-next-origin" }]'
-        servers: '[{ "id": "github", "username": "1919022585@qq.com", "password": "${{ github.token }}" }, { "id": "sonatype", "username": "${{ secrets.MAVEN_SERVER_USERNAME }}", "password": "${{ secrets.MAVEN_SERVER_PASSWORD }}" }]'
+        servers: '[{ "id": "github", "username": "${{ secrets.MAVEN_GITHUB_USERNAME }}", "password": "${{ github.token }}" }, { "id": "sonatype", "username": "${{ secrets.MAVEN_SERVER_USERNAME }}", "password": "${{ secrets.MAVEN_SERVER_PASSWORD }}" }]'
           
     - name: Import GPG Config
       id: import_gpg
