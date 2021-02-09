@@ -20,14 +20,8 @@ package tech.aegean.next.origin.member.service;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
-import tech.aegean.next.origin.member.entity.request.MemberLoginRequest;
-import tech.aegean.next.origin.member.entity.response.MemberLoginResponse;
-import tech.aegean.next.origin.member.mapper.MemberMapper;
 import tech.aegean.next.origin.member.mapper.MemberRankMapper;
-import tech.aegean.next.origin.member.model.Member;
 import tech.aegean.next.origin.member.model.MemberRank;
-
-import javax.servlet.http.HttpServletRequest;
 
 /**
  * @author rainyblossom

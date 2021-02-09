@@ -19,23 +19,11 @@
 package tech.aegean.next.origin.member.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import tech.aegean.next.origin.member.entity.request.MemberLoginRequest;
-import tech.aegean.next.origin.member.entity.response.MemberLoginResponse;
 import tech.aegean.next.origin.member.model.Member;
-
-import javax.servlet.http.HttpServletRequest;
 
 /**
  * @author rainyblossom
  */
 public interface MemberService extends IService<Member> {
 
-    /**
-     * 多渠道登录接口
-     *
-     * @param request
-     * @param memberLogin
-     * @return
-     */
-    MemberLoginResponse login(HttpServletRequest request, MemberLoginRequest memberLogin);
 }

@@ -20,12 +20,8 @@ package tech.aegean.next.origin.member.service;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
-import tech.aegean.next.origin.member.entity.request.MemberLoginRequest;
-import tech.aegean.next.origin.member.entity.response.MemberLoginResponse;
 import tech.aegean.next.origin.member.mapper.MemberMapper;
 import tech.aegean.next.origin.member.model.Member;
-
-import javax.servlet.http.HttpServletRequest;
 
 /**
  * @author rainyblossom
@@ -33,8 +29,4 @@ import javax.servlet.http.HttpServletRequest;
 @Service
 public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> implements MemberService{
 
-    @Override
-    public MemberLoginResponse login(HttpServletRequest request, MemberLoginRequest memberLogin) {
-        return null;
-    }
 }

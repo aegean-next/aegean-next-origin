@@ -1,2 +1,2 @@
 /.idea/
-/origin-base/origin-base-dao/target/
+**/target/

@@ -19,12 +19,7 @@
 package tech.aegean.next.origin.member.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import tech.aegean.next.origin.member.entity.request.MemberLoginRequest;
-import tech.aegean.next.origin.member.entity.response.MemberLoginResponse;
-import tech.aegean.next.origin.member.model.Member;
 import tech.aegean.next.origin.member.model.MemberRank;
-
-import javax.servlet.http.HttpServletRequest;
 
 /**
  * @author rainyblossom

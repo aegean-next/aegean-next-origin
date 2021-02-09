@@ -47,21 +47,34 @@
 
     <!-- 发布管理，要想发布到中央库就必须要配置的一个节点，以下两个链接可以从issue审核结果中找到 -->
     <!-- 其中id为自定义，后面会在maven/config/settings.xml中配置对应的服务器信息 -->
-    <distributionManagement>
-        <snapshotRepository>
+    <profiles>
+        <profile>
             <id>sonatype</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-        <repository>
-            <id>sonatype</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
-        </repository>
-        <repository>
+            <distributionManagement>
+                <snapshotRepository>
+                    <id>sonatype</id>
+                    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+                </snapshotRepository>
+                <repository>
+                    <id>sonatype</id>
+                    <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+                </repository>
+            </distributionManagement>
+        </profile>
+        <profile>
             <id>github</id>
-            <name>GitHub OWNER Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/OWNER/REPOSITORY</url>
-        </repository>
-    </distributionManagement>
+            <distributionManagement>
+                <snapshotRepository>
+                    <id>github</id>
+                    <url>https://maven.pkg.github.com/aegean-tech/aegean-tech-origin/snapshots</url>
+                </snapshotRepository>
+                <repository>
+                    <id>github</id>
+                    <url>https://maven.pkg.github.com/aegean-tech/aegean-tech-origin</url>
+                </repository>
+            </distributionManagement>
+        </profile>
+    </profiles>
 
     <!-- 开发者列表，个人的话就写自己，团队就罗列所有成员 -->
     <developers>
