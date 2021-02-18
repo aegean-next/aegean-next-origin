@@ -22,6 +22,7 @@
     <name>aegean-next-origin</name>
     <url>https://next.aegean.tech</url>
     <inceptionYear>2020</inceptionYear>
+    <description>aegean-next-origin</description>
     <!-- 许可证 -->
     <licenses>
         <license>
@@ -34,15 +35,15 @@
     <!-- 仓库地址 -->
     <scm>
         <tag>master</tag>
-        <url>https://github.com/easy-utils/easy-weprogram</url>
-        <connection>https://github.com/easy-utils/easy-weprogram.git</connection>
-        <developerConnection>https://github.com/easy-utils/easy-weprogram.git</developerConnection>
+        <url>https://github.com/aegean-next/aegean-next-origin</url>
+        <connection>https://github.com/aegean-next/aegean-next-origin.git</connection>
+        <developerConnection>https://github.com/aegean-next/aegean-next-origin.git</developerConnection>
     </scm>
 
     <!-- 问题管理系统 -->
     <issueManagement>
         <system>GitHub Issue Management</system>
-        <url>https://github.com/easy-utils/easy-weprogram/issues</url>
+        <url>https://github.com/aegean-next/aegean-next-origin/issues</url>
     </issueManagement>
 
     <!-- 发布管理，要想发布到中央库就必须要配置的一个节点，以下两个链接可以从issue审核结果中找到 -->
