@@ -24,6 +24,7 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Builder;
 import lombok.Data;
+import tech.aegean.next.origin.base.model.BaseModel;
 
 import java.math.BigInteger;
 import java.util.Date;
@@ -34,13 +35,7 @@ import java.util.Date;
 @Data
 @Builder
 @TableName("t_member_favorites")
-public class MemberFavorites {
-
-    /**
-     * PK
-     */
-    @TableId(type = IdType.AUTO)
-    private BigInteger id;
+public class MemberFavorites extends BaseModel {
 
     /**
      * 会员 ID
@@ -72,9 +67,4 @@ public class MemberFavorites {
     @TableField
     private String skuCode;
 
-    /**
-     * 创建时间
-     */
-    @TableField
-    private Date createTime;
 }

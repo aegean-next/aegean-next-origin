@@ -24,6 +24,7 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Builder;
 import lombok.Data;
+import tech.aegean.next.origin.base.model.BaseModel;
 
 import java.math.BigInteger;
 import java.util.Date;
@@ -34,13 +35,7 @@ import java.util.Date;
 @Data
 @Builder
 @TableName("t_member_authorization")
-public class MemberAuthorization {
-
-    /**
-     * PK
-     */
-    @TableId(type = IdType.AUTO)
-    private BigInteger id;
+public class MemberAuthorization extends BaseModel {
 
     /**
      * 短信订阅
@@ -66,15 +61,4 @@ public class MemberAuthorization {
     @TableField
     private BigInteger memberId;
 
-    /**
-     * 创建时间
-     */
-    @TableField
-    private Date createTime;
-
-    /**
-     * 更新时间
-     */
-    @TableField
-    private Date updateTime;
 }

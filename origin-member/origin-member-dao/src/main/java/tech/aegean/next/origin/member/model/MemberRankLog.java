@@ -24,6 +24,7 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Builder;
 import lombok.Data;
+import tech.aegean.next.origin.base.model.BaseModel;
 
 import java.math.BigInteger;
 import java.util.Date;
@@ -35,13 +36,7 @@ import java.util.Date;
 @Data
 @Builder
 @TableName("t_member_rank_log")
-public class MemberRankLog {
-
-    /**
-     * PK
-     */
-    @TableId(type = IdType.AUTO)
-    private BigInteger id;
+public class MemberRankLog extends BaseModel {
 
     // ----- ----- 变更内容 ----- -----
 
@@ -117,12 +112,6 @@ public class MemberRankLog {
      */
     @TableField
     private BigInteger handlersName;
-
-    /**
-     * 创建时间
-     */
-    @TableField
-    private Date createTime;
 
     /**
      * 生效时间

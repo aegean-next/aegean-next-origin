@@ -24,6 +24,7 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Builder;
 import lombok.Data;
+import tech.aegean.next.origin.base.model.BaseModel;
 
 import java.math.BigInteger;
 
@@ -34,13 +35,7 @@ import java.math.BigInteger;
 @Data
 @Builder
 @TableName("t_member_base")
-public class Member {
-
-    /**
-     * PK
-     */
-    @TableId(type = IdType.AUTO)
-    private BigInteger id;
+public class Member extends BaseModel {
 
     /**
      * 手机号

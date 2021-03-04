@@ -24,6 +24,7 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Builder;
 import lombok.Data;
+import tech.aegean.next.origin.base.model.BaseModel;
 
 import java.math.BigInteger;
 import java.util.Date;
@@ -31,13 +32,7 @@ import java.util.Date;
 @Data
 @Builder
 @TableName("t_member_address")
-public class MemberAddress {
-
-    /** PK **/
-    @TableId(type = IdType.AUTO)
-    private BigInteger id;
-
-    // ----- ----- ID ----- -----
+public class MemberAddress extends BaseModel {
 
     /** 国家 **/
     @TableField
@@ -96,14 +91,6 @@ public class MemberAddress {
      */
     @TableField
     private Integer status;
-
-    /** 创建时间 **/
-    @TableField
-    private Date createTime;
-
-    /** 更新时间 **/
-    @TableField
-    private Date updateTime;
 
 
 }

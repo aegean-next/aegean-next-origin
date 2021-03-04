@@ -18,7 +18,13 @@
 
 package tech.aegean.next.origin.base.model;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableId;
+
 import java.io.Serializable;
+import java.math.BigInteger;
+import java.util.Date;
 
 /**
  * 实体类基础模型
@@ -27,4 +33,18 @@ import java.io.Serializable;
 public class BaseModel implements Serializable {
 
     private static final long serialVersionUID = -487340123802410686L;
+
+    /** PK **/
+    @TableId(type = IdType.AUTO)
+    private BigInteger id;
+
+    /** 创建时间 **/
+    @TableField("create_time")
+    private Date createTime;
+
+    /** 更新时间 **/
+    @TableField("update_time")
+    private Date updateTime;
+
+
 }

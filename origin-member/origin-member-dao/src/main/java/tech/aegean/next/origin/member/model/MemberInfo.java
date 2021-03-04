@@ -21,6 +21,7 @@ package tech.aegean.next.origin.member.model;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Builder;
 import lombok.Data;
+import tech.aegean.next.origin.base.model.BaseModel;
 
 import java.math.BigInteger;
 import java.util.Date;
@@ -32,12 +33,7 @@ import java.util.Date;
 @Data
 @Builder
 @TableName("t_member_info")
-public class MemberInfo {
-
-    /**
-     * PK
-     */
-    private BigInteger id;
+public class MemberInfo extends BaseModel {
 
     /**
      * 昵称
