@@ -16,16 +16,18 @@
  * Or see the code warehouse at https://github.com/aegean-next, https://gitee.com/aegean-next.
  */
 
-package tech.aegean.next.origin.member.service;
+package tech.aegean.next.origin.product.service.media;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import tech.aegean.next.origin.member.model.MemberAddress;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import tech.aegean.next.origin.product.mapper.MediaLogMapper;
+import tech.aegean.next.origin.product.model.media.MediaLog;
 
 /**
- * MemberAddressService
+ * MediaLogService
  *
  * @author RainyBlossom
  * @date 2021/3/5
  */
-public interface MemberAddressService extends IService<MemberAddress> {
+public interface MediaLogService extends IService<MediaLog> {
 }

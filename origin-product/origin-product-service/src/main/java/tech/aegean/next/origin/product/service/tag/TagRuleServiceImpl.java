@@ -16,16 +16,19 @@
  * Or see the code warehouse at https://github.com/aegean-next, https://gitee.com/aegean-next.
  */
 
-package tech.aegean.next.origin.member.service;
+package tech.aegean.next.origin.product.service.tag;
 
-import com.baomidou.mybatisplus.extension.service.IService;
-import tech.aegean.next.origin.member.model.MemberAddress;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.stereotype.Service;
+import tech.aegean.next.origin.product.mapper.TagRuleMapper;
+import tech.aegean.next.origin.product.model.tag.TagRule;
 
 /**
- * MemberAddressService
+ * TagRuleServiceImpl
  *
  * @author RainyBlossom
  * @date 2021/3/5
  */
-public interface MemberAddressService extends IService<MemberAddress> {
+@Service
+public class TagRuleServiceImpl extends ServiceImpl<TagRuleMapper, TagRule> implements TagRuleService {
 }

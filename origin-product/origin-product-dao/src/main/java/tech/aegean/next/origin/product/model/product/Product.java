@@ -35,11 +35,6 @@ import java.util.Date;
  *
  * @author rainyblossom
  */
-@Data
-@Builder
-@TableName("t_product_sku")
-@NoArgsConstructor
-@AllArgsConstructor
 public abstract class Product extends BaseModel {
 
     /** 关联的 SPU 编码 **/

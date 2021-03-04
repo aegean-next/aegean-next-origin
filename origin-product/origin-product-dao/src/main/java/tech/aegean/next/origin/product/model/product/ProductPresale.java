@@ -19,12 +19,14 @@
 package tech.aegean.next.origin.product.model.product;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
  * 商品扩展模型 - 预售
  * @author RainyBlossom
  */
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class ProductPresale extends Product{

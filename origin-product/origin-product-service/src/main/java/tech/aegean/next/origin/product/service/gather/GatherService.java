@@ -16,16 +16,16 @@
  * Or see the code warehouse at https://github.com/aegean-next, https://gitee.com/aegean-next.
  */
 
-package tech.aegean.next.origin.member.service;
+package tech.aegean.next.origin.product.service.gather;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import tech.aegean.next.origin.member.model.MemberAddress;
+import tech.aegean.next.origin.product.model.gather.Gather;
 
 /**
- * MemberAddressService
+ * GatherService
  *
  * @author RainyBlossom
  * @date 2021/3/5
  */
-public interface MemberAddressService extends IService<MemberAddress> {
+public interface GatherService extends IService<Gather> {
 }

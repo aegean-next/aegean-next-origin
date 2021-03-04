@@ -16,16 +16,19 @@
  * Or see the code warehouse at https://github.com/aegean-next, https://gitee.com/aegean-next.
  */
 
-package tech.aegean.next.origin.member.service;
+package tech.aegean.next.origin.product.service.product;
 
-import com.baomidou.mybatisplus.extension.service.IService;
-import tech.aegean.next.origin.member.model.MemberAddress;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.stereotype.Service;
+import tech.aegean.next.origin.product.mapper.ProductPresaleMapper;
+import tech.aegean.next.origin.product.model.product.ProductPresale;
 
 /**
- * MemberAddressService
+ * ProductPresaleServiceImpl
  *
  * @author RainyBlossom
  * @date 2021/3/5
  */
-public interface MemberAddressService extends IService<MemberAddress> {
+@Service
+public class ProductPresaleServiceImpl extends ServiceImpl<ProductPresaleMapper, ProductPresale> implements ProductPresaleService {
 }
