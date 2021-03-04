@@ -27,7 +27,5 @@ import lombok.NoArgsConstructor;
  * @author RainyBlossom
  */
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class ProductPresale extends Product{
 }
