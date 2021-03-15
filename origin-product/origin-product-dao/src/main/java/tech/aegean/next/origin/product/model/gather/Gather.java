@@ -18,12 +18,29 @@
 
 package tech.aegean.next.origin.product.model.gather;
 
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Builder;
+import lombok.Data;
+
 /**
  * 商品集（基于 SPU 或 Product）
  *
+ * 分类是树
  * 商品除了必要的分类属性，在某些业务场景（如促销等）下还需要有商品集合的概念
+ *
+ * @author RainyBlossom
  */
+@Data
+@Builder
+@TableName("t_product_gather")
 public class Gather {
+
+    private String code;
+
+    private String name;
+
+    private String parent;
+
 
 
 }

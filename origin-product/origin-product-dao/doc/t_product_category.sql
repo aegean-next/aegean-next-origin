@@ -16,21 +16,20 @@
  * Or see the code warehouse at https://github.com/aegean-next, https://gitee.com/aegean-next.
  */
 
-package tech.aegean.next.origin.product.model.media;
+create table t_product_category
+(
+    id          bigint auto_increment
+        primary key,
+    code        varchar(100)                       not null comment '分类编码',
+    name        varchar(100)                       not null comment '分类名称',
+    sort        int                                not null comment '排序',
+    type        int                                not null comment '类型',
+    status      int                                not null,
+    image       varchar(255)                       null,
+    parent      bigint                             null,
+    create_time datetime default CURRENT_TIMESTAMP null,
+    update_time datetime default CURRENT_TIMESTAMP not null
+);
 
-import com.baomidou.mybatisplus.annotation.TableName;
-import lombok.Builder;
-import lombok.Data;
-import tech.aegean.next.origin.base.model.BaseModel;
 
-/**
- * 媒体模型（基于 SKU）
- *
- * 一个商品会存在多张图片或视频，且图片或视频存在多个位置（如 PDP、PLP 等）
- * @author rainyblossom
- */
-@Data
-@Builder
-@TableName("t_product_media")
-public class Media extends BaseModel {
-}
+

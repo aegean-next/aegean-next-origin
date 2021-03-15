@@ -18,6 +18,7 @@
 
 package tech.aegean.next.origin.product.model.catrgory;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Builder;
 import lombok.Data;
@@ -39,26 +40,33 @@ import java.math.BigInteger;
 public class Category extends BaseModel {
 
     /** 编码 **/
+    @TableField
     private String code;
 
     /** 名称 **/
+    @TableField
     private String name;
 
     /** 排序 **/
+    @TableField
     private Integer sort;
 
     /** 类型 **/
+    @TableField
     private Integer type;
 
     /**
      * 状态
      * @see CommonStatusEnum
      */
+    @TableField
     private Integer status;
 
     /** 图片 **/
+    @TableField
     private String image;
 
     /** 父 ID **/
+    @TableField
     private BigInteger parent;
 }

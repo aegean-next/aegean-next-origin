@@ -18,5 +18,18 @@
 
 package tech.aegean.next.origin.product.model.gather;
 
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Builder;
+import lombok.Data;
+
+/**
+ * GatherRelation
+ *
+ * @author RainyBlossom
+ * @date
+ */
+@Data
+@Builder
+@TableName("t_product_gather_relation")
 public class GatherRelation {
 }

@@ -18,6 +18,10 @@
 
 package tech.aegean.next.origin.product.model.advertise;
 
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Builder;
+import lombok.Data;
 import tech.aegean.next.origin.base.constant.CommonStatusEnum;
 import tech.aegean.next.origin.base.model.BaseModel;
 
@@ -30,35 +34,47 @@ import java.util.Date;
  *
  * @author rainyblossom
  */
+@Data
+@Builder
+@TableName("t_product_advertising_space")
 public class AdvertisingSpace extends BaseModel {
 
     /** 名称 **/
+    @TableField
     private String name;
 
     /** 编码 **/
+    @TableField
     private String code;
 
     /**
      * 状态
      * @see CommonStatusEnum
      */
+    @TableField
     private String status;
 
     /** 图片 **/
+    @TableField
     private String image;
 
     /** 目标跳转地址 **/
+    @TableField
     private String target;
 
     /** 跳转是否新开页面 **/
+    @TableField
     private Boolean newTab;
 
     /** 大小（占用几个广告位）**/
+    @TableField
     private Integer size;
 
     /** 生效时间 **/
+    @TableField
     private Date effectiveTime;
 
     /** 失效时间 **/
+    @TableField
     private Date expiredTime;
 }

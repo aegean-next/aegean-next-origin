@@ -18,6 +18,10 @@
 
 package tech.aegean.next.origin.product.model.advertise;
 
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Builder;
+import lombok.Data;
 import tech.aegean.next.origin.base.model.BaseModel;
 
 /**
@@ -27,25 +31,33 @@ import tech.aegean.next.origin.base.model.BaseModel;
  *
  * @author rainyblossom
  */
+@Data
+@Builder
+@TableName("t_product_advertising_space_relation")
 public class AdvertisingSpaceRelation extends BaseModel {
 
     /**
      * 定位类型
-     * 浮动位（相对位置）
-     * 固定位（绝对位置）
+     * 0 - Float 浮动位（相对位置）
+     * 1 - Fix 固定位（绝对位置）
      */
+    @TableField
     private Integer type;
 
     /** 位置（适用于相对定位） **/
+    @TableField
     private Integer location;
 
     /** 横位置（适用于绝对定位） **/
+    @TableField
     private Integer locationX;
 
     /** 纵位置（适用于绝对定位） **/
+    @TableField
     private Integer locationY;
 
     /** 页码 **/
+    @TableField
     private Integer page;
 
 }

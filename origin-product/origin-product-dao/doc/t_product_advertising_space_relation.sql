@@ -16,23 +16,16 @@
  * Or see the code warehouse at https://github.com/aegean-next, https://gitee.com/aegean-next.
  */
 
--- auto-generated definition
-create table t_member_base
+create table t_product_advertising_space_relation
 (
-    id     bigint auto_increment comment '主键',
-    mobile varchar(100)  null comment '手机号',
-    email  varchar(100)  null comment '邮箱',
-    salt   varchar(255)  null comment '密码盐值',
-    source int           null comment '注册来源',
-    status int default 1 not null comment '状态',
-    constraint t_member_base_email_uindex
-        unique (email),
-    constraint t_member_base_id_uindex
-        unique (id),
-    constraint t_member_base_mobile_uindex
-        unique (mobile)
+    id          bigint auto_increment
+        primary key,
+    type        int                                null comment '定位类型：0-Float浮动位(相对位置),1-Fix固定位(绝对位置)',
+    location    int                                null comment '位置(适用于相对定位)',
+    location_x  int                                null comment '横位置(适用于绝对定位)',
+    location_y  int                                null comment '纵位置(适用于绝对定位)',
+    page        int                                null comment '页码',
+    create_time datetime default CURRENT_TIMESTAMP not null,
+    update_time datetime default CURRENT_TIMESTAMP not null
 );
-
-alter table t_member_base
-    add primary key (id);
 
