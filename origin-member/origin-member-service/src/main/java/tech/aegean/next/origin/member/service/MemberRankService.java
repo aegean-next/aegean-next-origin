@@ -22,7 +22,10 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import tech.aegean.next.origin.member.model.MemberRank;
 
 /**
+ * MemberRankService
+ *
  * @author rainyblossom
+ * @date 2021/4/1
  */
 public interface MemberRankService extends IService<MemberRank> {
 

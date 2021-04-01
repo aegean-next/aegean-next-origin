@@ -16,20 +16,19 @@
  * Or see the code warehouse at https://github.com/aegean-next, https://gitee.com/aegean-next.
  */
 
-package tech.aegean.next.origin.member.service;
+package tech.aegean.next.origin.payment.service;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
-import tech.aegean.next.origin.member.mapper.MemberRankMapper;
-import tech.aegean.next.origin.member.model.MemberRank;
+import tech.aegean.next.origin.payment.mapper.PaymentMapper;
+import tech.aegean.next.origin.payment.model.Payment;
 
 /**
- * MemberRankServiceImpl
+ * PaymentServiceImpl
  *
- * @author rainyblossom
+ * @author RainyBlossom
  * @date 2021/4/1
  */
 @Service
-public class MemberRankServiceImpl extends ServiceImpl<MemberRankMapper, MemberRank> implements MemberRankService{
-
+public class PaymentServiceImpl extends ServiceImpl<PaymentMapper, Payment> implements PaymentService {
 }

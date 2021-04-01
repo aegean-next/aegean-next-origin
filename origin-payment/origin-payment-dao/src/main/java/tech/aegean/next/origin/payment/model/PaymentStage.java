@@ -28,72 +28,41 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 
 /**
- * Payment
+ * PaymentInfo
  *
  * @author RainyBlossom
  * @date 2021/3/31
  */
 @Data
 @Builder
-@TableName("t_payment_base")
-public class Payment extends BaseModel {
+@TableName("t_payment_stage")
+public class PaymentStage extends BaseModel {
 
-    /** 支付流水号 **/
-    @TableField("code")
-    private String code;
+    /** 分期支付银行 */
+    @TableField
+    private String provider;
 
-    /** 第三方支付流水 **/
-    @TableField("transaction_no")
-    private String transactionNo;
+    /** 分期数 **/
+    @TableField
+    private Integer periods;
 
-    /**
-     * 支付类型
-     * 100 - 微信 JSAPI
-     * 101 - 微信 APP
-     * 102 - 微信 Native
-     * 103 - 微信 付款码
-     * 104 - 微信 H5
-     * 105 - 微信 小程序
-     * 106 - 微信 刷脸支付
-     */
+    /** 类型 **/
     @TableField
     private Integer type;
 
-    /**
-     * 支付状态
-     * 100 - 创建失败
-     * 101 - 创建成功
-     * 200 - 回调验证失败
-     * 201 - 回调验证成功
-     * 300 - 订单自动取消
-     * 301 - 顾客主动取消
-     * 500 - 异常拦截
-     */
-    @TableField
-    private Integer status;
-
-    /** 是否为游客单 **/
-    @TableField
-    private Boolean visitor;
-
-    /** 订单实付金额 **/
+    /** 分期金额 **/
     @TableField
     private BigDecimal amount;
 
-    /** 收件人手机号 **/
+    /** 分期费率（年化） **/
     @TableField
-    private String mobile;
+    private BigDecimal rate;
 
-    /** 订单编码 **/
-    @TableField("order_code")
-    private String orderCode;
+   /** 代表分期手续费 *. */
+    @TableField
+    private BigDecimal poundage;
 
-    /** 订单 ID **/
-    @TableField("order_id")
-    private BigInteger orderId;
-
-    /** 支付成功时间 **/
-    @TableField("pay_time")
-    private String payTime;
+    /** 支付单 ID */
+    @TableField("payment_id")
+    private BigInteger paymentId;
 }
-

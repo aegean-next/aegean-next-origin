@@ -20,8 +20,16 @@ package tech.aegean.next.origin.member.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.stereotype.Service;
 import tech.aegean.next.origin.member.mapper.MemberAuthorizationMapper;
 import tech.aegean.next.origin.member.model.MemberAuthorization;
 
+/**
+ * MemberAuthorizationServiceImpl
+ *
+ * @author rainyblossom
+ * @date 2021/4/1
+ */
+@Service
 public class MemberAuthorizationServiceImpl extends ServiceImpl<MemberAuthorizationMapper, MemberAuthorization> implements MemberAuthorizationService {
 }

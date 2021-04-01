@@ -16,20 +16,36 @@
  * Or see the code warehouse at https://github.com/aegean-next, https://gitee.com/aegean-next.
  */
 
-package tech.aegean.next.origin.member.service;
+package tech.aegean.next.origin.payment.model;
 
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import org.springframework.stereotype.Service;
-import tech.aegean.next.origin.member.mapper.MemberRankMapper;
-import tech.aegean.next.origin.member.model.MemberRank;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Builder;
+import lombok.Data;
+import tech.aegean.next.origin.base.model.BaseModel;
+
+import java.math.BigInteger;
 
 /**
- * MemberRankServiceImpl
+ * PaymentStatusChangeLog
  *
- * @author rainyblossom
- * @date 2021/4/1
+ * @author RainyBlossom
+ * @date 2021/3/31
  */
-@Service
-public class MemberRankServiceImpl extends ServiceImpl<MemberRankMapper, MemberRank> implements MemberRankService{
+@Data
+@Builder
+@TableName("t_payment_status_log")
+public class PaymentStatusLog extends BaseModel {
 
+    /** 支付单 ID **/
+    @TableField("payment_id")
+    private BigInteger paymentId;
+
+    /** 修改前支付类型 **/
+    @TableField("before_type")
+    private Integer beforeType;
+
+    /** 修改后支付类型 **/
+    @TableField("after_type")
+    private Integer afterType;
 }

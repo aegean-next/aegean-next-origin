@@ -26,7 +26,10 @@ import tech.aegean.next.origin.member.model.MemberRank;
 import tech.aegean.next.origin.member.model.MemberRankLog;
 
 /**
+ * MemberRankLogServiceImpl
+ *
  * @author rainyblossom
+ * @date 2021/4/1
  */
 @Service
 public class MemberRankLogServiceImpl extends ServiceImpl<MemberRankLogMapper, MemberRankLog> implements MemberRankLogService{

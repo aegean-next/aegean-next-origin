@@ -16,13 +16,19 @@
  * Or see the code warehouse at https://github.com/aegean-next, https://gitee.com/aegean-next.
  */
 
-package tech.aegean.next.origin.payment.model;
+package tech.aegean.next.origin.payment.service;
+
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.stereotype.Service;
+import tech.aegean.next.origin.payment.mapper.PaymentStatusLogMapper;
+import tech.aegean.next.origin.payment.model.PaymentStatusLog;
 
 /**
- * PaymentStatusChangeLog
+ * PaymentStatusLogServiceImpl
  *
  * @author RainyBlossom
- * @date 2021/3/31
+ * @date 2021/4/1
  */
-public class PaymentStatus {
+@Service
+public class PaymentStatusLogServiceImpl extends ServiceImpl<PaymentStatusLogMapper, PaymentStatusLog> implements PaymentStatusLogService {
 }

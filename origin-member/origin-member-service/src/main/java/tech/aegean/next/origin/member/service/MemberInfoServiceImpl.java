@@ -23,6 +23,12 @@ import org.springframework.stereotype.Service;
 import tech.aegean.next.origin.member.mapper.MemberInfoMapper;
 import tech.aegean.next.origin.member.model.MemberInfo;
 
+/**
+ * MemberInfoServiceImpl
+ *
+ * @author rainyblossom
+ * @date 2021/4/1
+ */
 @Service
 public class MemberInfoServiceImpl extends ServiceImpl<MemberInfoMapper, MemberInfo> implements MemberInfoService {
 }

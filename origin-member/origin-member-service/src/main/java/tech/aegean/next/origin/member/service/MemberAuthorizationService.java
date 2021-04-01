@@ -21,5 +21,11 @@ package tech.aegean.next.origin.member.service;
 import com.baomidou.mybatisplus.extension.service.IService;
 import tech.aegean.next.origin.member.model.MemberAuthorization;
 
+/**
+ * MemberAuthorizationService
+ *
+ * @author rainyblossom
+ * @date 2021/4/1
+ */
 public interface MemberAuthorizationService extends IService<MemberAuthorization> {
 }

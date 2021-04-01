@@ -24,7 +24,10 @@ import tech.aegean.next.origin.member.mapper.MemberMapper;
 import tech.aegean.next.origin.member.model.Member;
 
 /**
+ * MemberServiceImpl
+ *
  * @author rainyblossom
+ * @date 2021/4/1
  */
 @Service
 public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> implements MemberService{

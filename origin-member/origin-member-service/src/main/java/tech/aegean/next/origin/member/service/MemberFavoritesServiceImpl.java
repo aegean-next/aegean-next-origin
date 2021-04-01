@@ -23,6 +23,12 @@ import org.springframework.stereotype.Service;
 import tech.aegean.next.origin.member.mapper.MemberFavoritesMapper;
 import tech.aegean.next.origin.member.model.MemberFavorites;
 
+/**
+ * MemberFavoritesServiceImpl
+ *
+ * @author rainyblossom
+ * @date 2021/4/1
+ */
 @Service
 public class MemberFavoritesServiceImpl extends ServiceImpl<MemberFavoritesMapper, MemberFavorites> implements MemberFavoritesService {
 }

@@ -23,7 +23,10 @@ import tech.aegean.next.origin.member.model.MemberRank;
 import tech.aegean.next.origin.member.model.MemberRankLog;
 
 /**
+ * MemberRankLogService
+ *
  * @author rainyblossom
+ * @date 2021/4/1
  */
 public interface MemberRankLogService extends IService<MemberRankLog> {
 
