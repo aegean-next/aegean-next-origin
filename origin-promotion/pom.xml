@@ -17,5 +17,12 @@
     <module>origin-promotion-service</module>
   </modules>
 
+  <dependencies>
+    <dependency>
+      <groupId>tech.aegean.next</groupId>
+      <artifactId>origin-base-dao</artifactId>
+      <version>${aegean.next.origin}</version>
+    </dependency>
+  </dependencies>
 
 </project>
