@@ -18,15 +18,12 @@
 
 package tech.aegean.next.origin.member.model;
 
-import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Builder;
 import lombok.Data;
+import tech.aegean.next.origin.base.constant.CommonStatusEnum;
 import tech.aegean.next.origin.base.model.BaseModel;
-
-import java.math.BigInteger;
 
 /**
  * 会员实体类
@@ -66,9 +63,7 @@ public class Member extends BaseModel {
 
     /**
      * 状态
-     * 0 - 注销
-     * 1 - 启用
-     * 2 - 冻结
+     * @see CommonStatusEnum
      */
     @TableField
     private Integer status;
