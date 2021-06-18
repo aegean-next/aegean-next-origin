@@ -7,7 +7,7 @@
     <groupId>tech.aegean.next</groupId>
     <artifactId>aegean-next-origin</artifactId>
     <packaging>pom</packaging>
-    <version>AN-0.0.1</version>
+    <version>AN-0.0.2-SNAPSHOT</version>
 
     <modules>
         <module>origin-base</module>
@@ -114,7 +114,7 @@
         <license.sectionDelimiter>#</license.sectionDelimiter>
         <license.processStartTag>Start tag</license.processStartTag>
         <license.processEndTag>End tag</license.processEndTag>
-        <aegean.next.origin>AN-0.0.1</aegean.next.origin>
+        <aegean.next.origin>AN-0.0.2-SNAPSHOT</aegean.next.origin>
 
         <version.mysql>8.0.16</version.mysql>
         <version.mybatis-plus>3.3.2</version.mybatis-plus>
